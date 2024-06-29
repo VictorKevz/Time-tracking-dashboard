@@ -1,0 +1,88 @@
+
+.header-wrapper {
+    height: 518px;
+    grid-row: span 2;
+    background-color: var(--neutral-dark-blue);
+    border-radius: 1.6rem;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+
+  }
+  .profile-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 354px;
+    background-color: var(--primary-blue);
+    padding: 3.76rem 3.2rem 0 3.2rem;
+    border-radius: 1.6rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .profile-pic {
+    width: 78px;
+    height: 78px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-bottom: 3.76rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .report-text {
+    font-weight: 300;
+    color: var(--neutral-pale-blue);
+    margin-bottom: 0.24rem;
+    font-size: 1.52rem;
+  }
+  .header-title {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+  .fields-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.92rem;
+    padding: 2.8rem 2.9rem 3.2rem 2.9rem;
+    transition: all 0.3s ease-in-out;
+
+  }
+  input[type="radio"] {
+    appearance: none;
+  }
+  label {
+    color: var(--neutral-desaturated-blue);
+    font-size: 1.8rem;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  label:hover {
+    color: white;
+  }
+  
+  input[type="radio"]:checked + label {
+    color: white;
+  }
+  @media (width <= 830px) {
+    .header-wrapper{
+        height: 250px;
+    }
+   .profile-text-container{
+    flex-direction: row;
+    justify-content: space-between;
+    height: 150px;
+   } 
+   .fields-container{
+    flex-direction: row;
+    justify-content: space-between;
+   }
+  }
+
+  @media (width <= 588px) {
+    .header-title{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .profile-pic{
+        width: 60px;
+        height: 60px;
+    }
+  }

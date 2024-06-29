@@ -48,7 +48,6 @@ p{
   width: 100%;
   max-width: 1110px;
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(0, 255px)); */
   grid-template-columns: 1fr 3fr;
   grid-template-rows: repeat(auto-fit, 244px);
   min-height: 520px;
